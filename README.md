@@ -20,9 +20,13 @@ Note: Chrome has strict permissions for reading files out of the local file
 system. Some examples use AJAX which works differently via HTTP instead of local
 files. For the best experience, load the C3 examples from your own machine via
 HTTP. Any static file web server will work; for example you can run Python's
-built-in server:
+built-in server (python 2):
 
     python -m SimpleHTTPServer 8888
+
+For python 3, run:
+
+    python3 -m http.server 8888
 
 Once this is running, go to: <http://localhost:8888/examples/>
 
